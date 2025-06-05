@@ -1,0 +1,223 @@
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Изделия из ПВХ – окна, двери, витражи</title>
+<style>
+  /* Сброс стилей */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+    color: #1e293b;
+    line-height: 1.6;
+  }
+  header {
+    background-color: #0284c7;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    animation: slideDown 1s ease forwards;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+  }
+  nav {
+    margin-top: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #facc15;
+  }
+  main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  section {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(3, 105, 161, 0.15);
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease forwards;
+  }
+  h2 {
+    color: #0369a1;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #facc15;
+    padding-bottom: 8px;
+  }
+  p {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+  }
+  ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(2, 132, 199, 0.3);
+    margin-top: 15px;
+    animation: zoomIn 0.8s ease forwards;
+  }
+  .contact {
+    background-color: #0369a1;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(2,132,199,0.5);
+    margin-bottom: 60px;
+  }
+  .contact a {
+    color: #fde68a;
+    text-decoration: none;
+    font-weight: 900;
+    transition: color 0.3s;
+  }
+  .contact a:hover {
+    color: white;
+  }
+  footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    padding: 20px 10px;
+    border-top: 1px solid #e2e8f0;
+  }
+  /* Анимации */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  /* Адаптивность */
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    nav a {
+      font-size: 1rem;
+      margin: 0 8px;
+    }
+    main {
+      margin: 20px auto;
+      padding: 0 12px;
+    }
+    section {
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Изделия из ПВХ: окна, двери, витражи</h1>
+  <nav>
+    <a href="#windows">Окна</a>
+    <a href="#doors">Двери</a>
+    <a href="#stainedglass">Витражи</a>
+  </nav>
+</header>
+
+<main>
+  <section id="windows">
+    <h2>Современные окна из ПВХ</h2>
+    <p>Наши окна из ПВХ — это:</p>
+    <ul>
+      <li>Энергоэффективность и отличная теплоизоляция, позволяющая экономить на отоплении</li>
+      <li>Высокая звукоизоляция для комфортного проживания в шумных районах</li>
+      <li>Надёжность и долговечность — устойчивы к влаге, коррозии и перепадам температур</li>
+<li>Современный дизайн, который легко впишется в любой интерьер</li>
+    </ul>
+    <p>Мы предлагаем стандартные и нестандартные размеры, широкий выбор цветов и форм.</p>
+    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_66cf3969358c1b0d7aa52bce_66cf39fc48695e3387bbdf1d/scale_1200"="Окна из ПВХ" />
+  </section>
+
+  <section id="doors">
+    <h2>Качественные двери из ПВХ</h2>
+    <p>Выбирайте двери из ПВХ, которые обеспечивают безопасность и стиль вашего дома или офиса:</p>
+    <ul>
+      <li>Выдерживают нагрузки и механические повреждения</li>
+      <li>Обеспечивают хорошую звуко- и теплоизоляцию</li>
+      <li>Разнообразие цветов и текстур под дерево, металлик и др.</li>
+      <li>Просты в уходе и долговечны</li>
+    </ul>
+    <img src="https://avatars.mds.yandex.net/i?id=1bc591e064d67a2d2fe3d3b9c525678cd9941f99-4011439-images-thumbs&n=13"="Двери из ПВХ" />
+  </section>
+
+  <section id="stainedglass">
+    <h2>Красивые витражи из ПВХ</h2>
+    <p>Витражи придают индивидуальность и особую атмосферу помещениям:</p>
+    <ul>
+      <li>Широкий выбор рисунков и цветовых решений</li>
+      <li>Индивидуальный дизайн и профессиональное исполнение</li>
+      <li>Отличное сочетание с окнами и дверями из ПВХ</li>
+    </ul>
+    <img src="https://avatars.mds.yandex.net/get-altay/13929277/2a0000019000f60cb6c4b6f948678d2fe74e/XXXL"="Витражи из ПВХ" />
+  </section>
+
+  <div class="contact">
+    <p>Есть вопросы или хотите заказать? Звоните прямо сейчас:</p>
+    <p><a href="tel:+375295831415">+375 29 583 14 15</a></p>
+  </div>
+</main>
+
+<footer>
+  © 2024 Изделия из ПВХ. Все права защищены.
+</footer>
+
+</body>
+</html>
+```
